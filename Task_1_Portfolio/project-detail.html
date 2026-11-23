@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | Janith Chamodya</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container section project-detail">
+        <a class="back-link" href="index.html#projects">&larr; Back to Projects</a>
+
+        <div id="project-detail-content">
+            <div class="project-detail-hero">
+                <img id="detail-image" class="project-detail-image" src="" alt="">
+                <div class="project-detail-copy">
+                    <p id="detail-subtitle" class="project-subtitle"></p>
+                    <h1 id="detail-title"></h1>
+                    <p id="detail-description"></p>
+                    <div id="detail-tags" class="project-tags"></div>
+                    <div class="project-detail-actions" style="margin-top: 1.5rem;">
+                        <a id="detail-live" href="#" target="_blank" rel="noopener" class="btn primary-btn">Live Demo</a>
+                        <a id="detail-repo" href="#" target="_blank" rel="noopener" class="btn outline-btn">GitHub Repo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-detail-meta">
+                <section>
+                    <h2>Project Overview</h2>
+                    <p id="detail-overview"></p>
+                </section>
+                <section>
+                    <h2>Key Features</h2>
+                    <p id="detail-features"></p>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const projects = {
+            sports: {
+                title: "Sport Management System",
+                subtitle: "Sabaragamuwa University of Sri Lanka",
+                image: "https://github.com/LuthiraPeiris/sports-management-system/blob/b3feaaf6de209317628197e11fa55bcbe15f9c56/images3/readme/1.png?raw=true",
+                description: "A web-based platform that connects students and coaches and streamlines sports operations across a university environment.",
+                overview: "The system provides a centralized place for students to discover sports, register for activities, view schedules, and track participation. Coaches can manage teams and facilities, organize sporting events, and monitor student involvement.",
+                features: "Student sports registration, schedule management, coach and team administration, facility coordination, and participation tracking.",
+                tags: ["PHP", "MySQL", "Bootstrap 5", "TailwindCSS"],
+                live: "https://suslsportsclub.infinityfreeapp.com/Sport_Management/Homepage.php",
+                repo: "https://github.com/LuthiraPeiris/sports-management-system"
+            },
+            smartgn: {
+                title: "SmartGN",
+                subtitle: "Digital Grama Niladhari Service Management",
+                image: "",
+                description: "An online platform that modernizes village administration and makes public services easier to request and manage.",
+                overview: "SmartGN gives Grama Niladhari officers and residents a digital channel for certificate requests, appointment booking, allowance applications, public announcements, and multilingual AI-assisted support.",
+                features: "Certificate request workflows, appointment management, allowance applications, online announcements, resident services, and a multi-language AI chatbot.",
+                tags: ["HTML", "CSS", "JavaScript", "DBMS", "AI Chatbot"],
+                live: "https://janith230528.github.io/SmartGN/",
+                repo: "https://github.com/janith230528/SmartGN"
+            }
+        };
+
+        const id = new URLSearchParams(window.location.search).get("id");
+        const project = projects[id] || projects.sports;
+
+        document.title = project.title + " | Project Details";
+        document.getElementById("detail-title").textContent = project.title;
+        document.getElementById("detail-subtitle").textContent = project.subtitle;
+        document.getElementById("detail-description").textContent = project.description;
+        document.getElementById("detail-overview").textContent = project.overview;
+        document.getElementById("detail-features").textContent = project.features;
+        document.getElementById("detail-live").href = project.live;
+        document.getElementById("detail-repo").href = project.repo;
+
+        const image = document.getElementById("detail-image");
+        if (project.image) {
+            image.src = project.image;
+            image.alt = project.title;
+        } else {
+            image.outerHTML = '<div class="project-detail-placeholder" style="background: linear-gradient(135deg, #10b981, #3b82f6);">SmartGN Interface</div>';
+        }
+
+        document.getElementById("detail-tags").innerHTML =
+            project.tags.map(tag => "<span>" + tag + "</span>").join("");
+    </script>
+</body>
+</html>
