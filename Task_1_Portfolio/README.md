@@ -3,7 +3,7 @@
 This repository contains **Task 1** of the Datheon Full Stack Web Development Internship. It is a sleek, responsive, and modern developer portfolio designed to showcase technical projects, skills, resume credentials, and contact links.
 
 ## 🔗 Live Demo
-**Check out the live website here:** [Insert your Vercel/Netlify/GitHub Pages URL here]
+**Check out the live website here:** [https://portfolio-mu-pink-87.vercel.app/]
 
 ## 📸 Screenshots
 *(Optional but highly recommended: Drag and drop a screenshot of your portfolio here)*
