@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jane Doe | Frontend Developer</title>
+    <title>Janith Chamodya | Fullstack Developer</title>
     <!-- Google Fonts for a sleek look -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <!-- HEADER & NAVIGATION -->
     <header>
         <nav class="container">
-             <a href="#hero" class="logo">JD<span>.dev</span></a>
-
-              <ul class="nav-links" id="nav-links">
+            <a href="#hero" class="logo">JC<span>.dev</span></a>
+            
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
 
-             <div class="nav-actions">
+            <div class="nav-actions">
                 <!-- Theme Toggle Button -->
                 <button id="theme-toggle" aria-label="Toggle Dark Mode">
                     <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
                     <svg id="sun-icon" style="display:none;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
                 </button>
-
                 <!-- Mobile Hamburger -->
                 <button id="hamburger" class="hamburger" aria-label="Menu">
                     <span></span><span></span><span></span>
@@ -41,13 +41,164 @@
         <section id="hero" class="container">
             <div class="hero-content">
                 <p class="greeting">Hi, I'm</p>
-                <h1>Jane Doe.</h1>
+                <h1>Janith Chamodya.</h1>
                 <h2>I build things for the web.</h2>
-                <p class="hero-desc">I'm a frontend developer specializing in building exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products.</p>
+                <p class="hero-desc">I'm a fullstack developer specializing in building exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products.</p>
                 <a href="#projects" class="btn primary-btn">Check out my work</a>
             </div>
         </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="container section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>Hello! My name is Janith and I enjoy creating things that live on the internet. My interest in web development started back in 2024 when I decided to try editing custom Tumblr themes — turns out hacking together HTML & CSS taught me a lot about creating beautiful digital interfaces!</p>
+                <p>Fast-forward to today, and I've had the privilege of working at an advertising agency, a start-up, and a huge corporation. My main focus these days is building accessible, inclusive products for a variety of clients.</p>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="container section">
+            <h2 class="section-title">My Tech Stack</h2>
+            
+            <div class="carousel-container">
+                
+                <!-- Row 1: Languages & Frontend -->
+                <div class="carousel-track">
+                    <!-- We duplicate the items so the loop is seamless -->
+                    <div class="skill-item"><img src="./assets/free-c-icon-svg-download-png-1175247.png" alt="C"> C</div>
+                    <div class="skill-item"><img src="./assets/java.png" alt="Java"> Java</div>
+                    <div class="skill-item"><img src="path/to/python-icon.png" alt="Python"> Python</div>
+                    <div class="skill-item"><img src="path/to/js-icon.png" alt="JavaScript"> JS</div>
+                    <div class="skill-item"><img src="path/to/html-icon.png" alt="HTML5"> HTML5</div>
+                    <div class="skill-item"><img src="path/to/css-icon.png" alt="CSS3"> CSS3</div>
+                    
+                    <!-- Duplicated for seamless scroll -->
+                    <div class="skill-item"><img src="./assets/free-c-icon-svg-download-png-1175247.png" alt="C"> C</div>
+                    <div class="skill-item"><img src="./assets/java.png" alt="Java"> Java</div>
+                    <div class="skill-item"><img src="path/to/python-icon.png" alt="Python"> Python</div>
+                    <div class="skill-item"><img src="path/to/js-icon.png" alt="JavaScript"> JS</div>
+                    <div class="skill-item"><img src="path/to/html-icon.png" alt="HTML5"> HTML5</div>
+                    <div class="skill-item"><img src="path/to/css-icon.png" alt="CSS3"> CSS3</div>
+                </div>
+
+                <!-- Row 2: Frameworks & Backend -->
+                <div class="carousel-track reverse">
+                    <div class="skill-item"><img src="path/to/react-icon.png" alt="React"> React</div>
+                    <div class="skill-item"><img src="path/to/tailwind-icon.png" alt="Tailwind"> Tailwind</div>
+                    <div class="skill-item"><img src="path/to/bootstrap-icon.png" alt="Bootstrap"> Bootstrap</div>
+                    <div class="skill-item"><img src="path/to/node-icon.png" alt="Node.js"> Node.js</div>
+                    <div class="skill-item"><img src="path/to/php-icon.png" alt="PHP"> PHP</div>
+                    <div class="skill-item"><img src="path/to/express-icon.png" alt="Express"> Express</div>
+
+                    <!-- Duplicated for seamless scroll -->
+                    <div class="skill-item"><img src="path/to/react-icon.png" alt="React"> React</div>
+                    <div class="skill-item"><img src="path/to/tailwind-icon.png" alt="Tailwind"> Tailwind</div>
+                    <div class="skill-item"><img src="path/to/bootstrap-icon.png" alt="Bootstrap"> Bootstrap</div>
+                    <div class="skill-item"><img src="path/to/node-icon.png" alt="Node.js"> Node.js</div>
+                    <div class="skill-item"><img src="path/to/php-icon.png" alt="PHP"> PHP</div>
+                    <div class="skill-item"><img src="path/to/express-icon.png" alt="Express"> Express</div>
+                </div>
+
+                <!-- Row 3: Database & Design -->
+                <div class="carousel-track">
+                    <div class="skill-item"><img src="path/to/mongo-icon.png" alt="MongoDB"> MongoDB</div>
+                    <div class="skill-item"><img src="path/to/mysql-icon.png" alt="MySQL"> MySQL</div>
+                    <div class="skill-item"><img src="path/to/figma-icon.png" alt="Figma"> Figma</div>
+                    <div class="skill-item"><img src="path/to/ai-icon.png" alt="Illustrator"> Illustrator</div>
+                    <div class="skill-item"><img src="path/to/ps-icon.png" alt="Photoshop"> Photoshop</div>
+                    <div class="skill-item"><img src="path/to/canva-icon.png" alt="Canva"> Canva</div>
+                    
+                    <!-- Duplicated for seamless scroll -->
+                    <div class="skill-item"><img src="path/to/mongo-icon.png" alt="MongoDB"> MongoDB</div>
+                    <div class="skill-item"><img src="path/to/mysql-icon.png" alt="MySQL"> MySQL</div>
+                    <div class="skill-item"><img src="path/to/figma-icon.png" alt="Figma"> Figma</div>
+                    <div class="skill-item"><img src="path/to/ai-icon.png" alt="Illustrator"> Illustrator</div>
+                    <div class="skill-item"><img src="path/to/ps-icon.png" alt="Photoshop"> Photoshop</div>
+                    <div class="skill-item"><img src="path/to/canva-icon.png" alt="Canva"> Canva</div>
+                </div>
+
+                <!-- Row 4: Dev Tools -->
+                <div class="carousel-track reverse">
+                    <div class="skill-item"><img src="path/to/vscode-icon.png" alt="VS Code"> VS Code</div>
+                    <div class="skill-item"><img src="path/to/webstorm-icon.png" alt="WebStorm"> WebStorm</div>
+                    <div class="skill-item"><img src="path/to/pycharm-icon.png" alt="PyCharm"> PyCharm</div>
+                    <div class="skill-item"><img src="path/to/git-icon.png" alt="Git"> Git</div>
+                    <div class="skill-item"><img src="path/to/github-icon.png" alt="GitHub"> GitHub</div>
+                    <div class="skill-item"><img src="path/to/docker-icon.png" alt="Docker"> Docker</div>
+
+                    <!-- Duplicated for seamless scroll -->
+                    <div class="skill-item"><img src="path/to/vscode-icon.png" alt="VS Code"> VS Code</div>
+                    <div class="skill-item"><img src="path/to/webstorm-icon.png" alt="WebStorm"> WebStorm</div>
+                    <div class="skill-item"><img src="path/to/pycharm-icon.png" alt="PyCharm"> PyCharm</div>
+                    <div class="skill-item"><img src="path/to/git-icon.png" alt="Git"> Git</div>
+                    <div class="skill-item"><img src="path/to/github-icon.png" alt="GitHub"> GitHub</div>
+                    <div class="skill-item"><img src="path/to/docker-icon.png" alt="Docker"> Docker</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="container section">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-image" style="background-color: #4F46E5;"></div>
+                    <div class="project-info">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-stack e-commerce application with a custom cart and payment gateway integration.</p>
+                        <div class="project-tags">
+                            <span>React</span><span>Node.js</span><span>Stripe</span>
+                        </div>
+                        <button class="btn outline-btn open-modal" data-project="ecommerce">View Details</button>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-image" style="background-color: #10B981;"></div>
+                    <div class="project-info">
+                        <h3>Task Management App</h3>
+                        <p>A productivity app featuring drag-and-drop tasks, local storage persistence, and dark mode.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS Grid</span><span>Vanilla JS</span>
+                        </div>
+                        <button class="btn outline-btn open-modal" data-project="task">View Details</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTACT / FOOTER -->
+        <footer id="contact" class="container section text-center">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            <a href="mailto:hello@janedoe.com" class="btn primary-btn mt-2">Say Hello</a>
+            
+            <div class="socials mt-2">
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">Twitter</a>
+            </div>
+        </footer>
     </main>
+
+    <!-- PROJECT MODAL -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h3 id="modal-title">Project Title</h3>
+            <p id="modal-desc">Project description goes here...</p>
+            <div class="modal-links">
+                <a href="#" id="modal-live" class="btn primary-btn" target="_blank">Live Demo</a>
+                <a href="#" id="modal-code" class="btn outline-btn" target="_blank">Source Code</a>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
